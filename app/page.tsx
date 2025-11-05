@@ -15,7 +15,7 @@ export default function Home() {
         }}
       >
         {/* ✅ Refreshes CachedComponent and DynamicComponent */}
-        <button>revalidatePath</button>
+        <button type="submit">revalidatePath</button>
       </form>
       <form
         action={async () => {
@@ -26,7 +26,7 @@ export default function Home() {
       >
         {/* ✅ Locally only refreshes DynamicComponent. */}
         {/* ❌ When deployed to Vercel refreshes both CachedComponent and DynamicComponent */}
-        <button>refresh</button>
+        <button type="submit">refresh</button>
       </form>
     </div>
   );
