@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <div>
       <CachedComponent />
-      <Suspense>
+      <Suspense fallback="Loading...">
         <DynamicComponent />
       </Suspense>
       <form
